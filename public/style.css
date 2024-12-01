@@ -1,0 +1,151 @@
+:root {
+  /* Define color variables */
+  --primary-color: #000000; /* Black */
+  --secondary-color: #fdd835; /* Yellow */
+  --gradient-color: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+  --text-color: #ffffff; /* White for contrast */
+  --button-hover: #ffca28; /* Lighter yellow */
+}
+
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--gradient-color); /* Dynamic gradient */
+  color: var(--text-color);
+  overflow-x: hidden;
+  transition: background 0.5s ease-in-out; /* Smooth background transition */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: var(--primary-color); /* Black */
+  color: var(--secondary-color); /* Yellow */
+  border-bottom: 2px solid var(--secondary-color);
+  transition: background 0.5s, color 0.5s; /* Smooth color transition */
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+/* Sidebar Menu */
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+  background: var(--secondary-color); /* Yellow */
+  color: var(--primary-color); /* Black */
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: var(--gradient-color); /* Dynamic gradient */
+  color: var(--text-color);
+  transition: background 0.5s;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  text-decoration: none;
+  background: var(--secondary-color); /* Yellow */
+  color: var(--primary-color); /* Black */
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: var(--button-hover); /* Lighter yellow */
+  color: var(--primary-color); /* Black */
+}
+
+/* Summary Section */
+.summary {
+  padding: 50px 20px;
+  text-align: center;
+  background: var(--primary-color); /* Black */
+  color: var(--secondary-color); /* Yellow */
+  transition: background 0.5s, color 0.5s;
+}
+
+/* State Info Section */
+.state-info {
+  padding: 50px 20px;
+  background: var(--secondary-color); /* Yellow */
+  color: var(--primary-color); /* Black */
+  transition: background 0.5s, color 0.5s;
+}
+
+.state-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.state-card {
+  background: var(--primary-color); /* Black */
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--text-color);
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.state-card:hover {
+  background: var(--secondary-color); /* Yellow */
+  color: var(--primary-color); /* Black */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: var(--primary-color); /* Black */
+  color: var(--secondary-color); /* Yellow */
+  border-top: 2px solid var(--secondary-color);
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}

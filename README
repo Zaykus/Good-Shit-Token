@@ -1,0 +1,71 @@
+project-root/
+│
+├── index.html            # Home page
+├── about.html            # About page
+├── tokenomics.html       # Tokenomics page
+├── contact.html          # Contact page
+│
+├── public/
+│   ├── style.css         # Shared styles
+│   ├── script.js         # Shared JavaScript
+│   ├── assets/           # Images and other assets
+│
+├── partials/
+│   ├── header.html       # Navigation and header (reusable)
+│   ├── footer.html       # Footer (reusable)
+
+
+Disabling a code line without deleting it is commonly referred to as **commenting**. You can do this in different programming languages or file types, and the syntax varies slightly depending on the language.
+
+### **1. In CSS:**
+Use `/* ... */` to comment out code:
+```css
+/* This is a comment in CSS */
+body {
+  background-color: white;
+  /* color: black; This line is commented out */
+}
+```
+
+### **2. In HTML:**
+Use `<!-- ... -->` to comment out code:
+```html
+<!-- This is a comment in HTML -->
+<div>
+  <!-- <p>This paragraph is disabled</p> -->
+</div>
+```
+
+### **3. In JavaScript:**
+Use `//` for single-line comments or `/* ... */` for multi-line comments:
+```javascript
+// This is a single-line comment
+/* This is a 
+multi-line comment */
+let x = 5; 
+// let y = 10; // Disabled line
+```
+
+### **4. In JSON (Configuration Files):**
+JSON does not support comments directly, but you can work around this by using dummy properties:
+```json
+{
+  "name": "MyApp",
+  "version": "1.0.0"
+  /* "description": "This is a comment" */
+}
+```
+
+### **5. In Visual Studio Code (VSCode):**
+#### **Keyboard Shortcuts to Comment/Uncomment:**
+- **Windows/Linux**:  
+  - `Ctrl + /` for single-line comments.
+  - `Shift + Alt + A` for block comments.
+- **Mac**:  
+  - `Cmd + /` for single-line comments.
+  - `Shift + Option + A` for block comments.
+
+#### **Example in VSCode:**
+Select the line(s) you want to disable, then press the shortcut. It will automatically apply the appropriate comment syntax for the file type.
+
+Let me know if you'd like to see how to do this in another language! 😊 
